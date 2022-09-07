@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +12,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Hello World';
   imageurl="assets/Bridgelabz.png";
-  url="https://www.bridgelabz.com/"
-onClick($event:any){
-  console.log("save button is clicked!",$event);
+  url="https://www.bridgelabz.com/";
+  username:String="";
+
+  onClick($event:any){
+  console.log($event);
   window.open(this.url,"_blank")
 }
 
