@@ -10,3 +10,9 @@ img{
 .container{
     padding-left: 550px;
 }
+.error-output{
+    margin-left: 10px;
+    font-size: 10px;
+    font-style: italic;
+    color: red;
+}

@@ -2,5 +2,6 @@
  <h1>hello {{this.username}} from bridgelabz</h1>
 <img [src]="imageurl" (click)="onClick($event)" alt="bridgelabz logo"> 
 <div class="container">
-<input  [(ngModel)]="username">
+<input (input)="onInput($event)"  [(ngModel)]="username"/>
+<span class="error-output">{{this.usererror}}</span>
 </div>
