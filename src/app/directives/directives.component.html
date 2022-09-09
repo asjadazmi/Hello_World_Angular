@@ -1,0 +1,18 @@
+<h1>List of student</h1>
+<hr>
+
+<div *ngIf="student.length==0">
+    <h2>Student list is empty</h2>
+</div>
+
+<h3>Male Student list</h3>
+
+<ul *ngFor="let stud of student">
+    <li *ngIf="stud.gender=='male'">id {{stud.id}}, name {{stud.name}}, salary {{stud.salary}}</li>
+</ul>
+
+<h3>Female Student list</h3>
+
+<ul *ngFor="let stud of student">
+    <li *ngIf="stud.gender=='female'">id {{stud.id}}, name {{stud.name}}, salary {{stud.salary}}</li>
+</ul>
